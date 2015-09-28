@@ -1,7 +1,7 @@
 # node-in-parallel
 A node-specific foreach that runs asynchronously by launching a callback on each item and another callback when all have been run.
 
-This uses a very efficient for loop with a cached value and also uses an efficient way to split up parallel asynchronous processes by the process nextTick. This is fills a simple and repeating need of forEach in node.
+This uses a very efficient for loop with a cached value and also uses an efficient way to split up parallel asynchronous processes by the process nextTick. This fills a simple and repeating need of forEach in node.
 
 # Example
 
