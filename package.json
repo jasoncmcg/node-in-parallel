@@ -11,5 +11,9 @@
     "forEach"
   ],
   "author": "Jason McGinnis",
-  "license": "ISC"
+  "license": "ISC",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/magnis/node-in-parallel"
+  }
 }
