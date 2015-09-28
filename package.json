@@ -1,5 +1,5 @@
 {
-  "name": "node-parallel-for",
+  "name": "node-in-parallel",
   "version": "1.0.0",
   "description": "Run asynchronous forEach process on an array",
   "main": "index.js",
