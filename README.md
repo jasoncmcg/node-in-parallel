@@ -16,3 +16,15 @@ p([1,2,3,4], function(item) {
 	console.log('Last callback happens on last item and returns the original array.', final);
 });
 ```
+
+# Other Example
+
+
+```
+p(bigList, function(listItem) {
+
+	console.log(listItem);
+}, function () {
+	cb("All done");
+})
+```
