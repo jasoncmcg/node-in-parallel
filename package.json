@@ -10,7 +10,6 @@
     "node",
     "forEach"
   ],
-  }
     "repository": {
     "type": "git",
     "url": "git+https://github.com/jasoncmcg/node-in-parallel.git"
