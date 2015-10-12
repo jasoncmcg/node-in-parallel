@@ -8,7 +8,7 @@ This uses a very efficient for loop with a cached value and also uses an efficie
 This shows an extremely simple array that goes in. Then, the first callback runs for each individual item. The final callback happens at the end of the last one.
 
 ```
-var p = require('parallel');
+var p = require('node-in-parallel');
 
 p([1,2,3,4], function(item) {
 	console.log('The callback that happens for each individual item.', item);
