@@ -1,10 +1,7 @@
 module.exports = function (inputArray, singleCb, finalCb) {
-var len = inputArray.length;
-var lenTarget = 0;
-
-for (i = 0; i < len; i++) {
+for (let i = 0, len = inputArray.length, lenTarget = 0; i < len; i++) {
 	(function() {
-		var ii = i;
+		let ii = i;
 		process.nextTick( function(){
 			singleCb(inputArray[ii]);
 			lenTarget++;
