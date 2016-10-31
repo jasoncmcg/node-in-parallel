@@ -1,15 +1,16 @@
-module.exports = function (inputArray, singleCb, finalCb) {
-for (let i = 0, len = inputArray.length, lenTarget = 0; i < len; i++) {
-	(function() {
-		let ii = i;
-		process.nextTick( function(){
-			singleCb(inputArray[ii]);
-			lenTarget++;
-			
-			if (lenTarget === len) {
-				finalCb(inputArray);
-			}
-		});
-	})();
-}
+module.exports = function(inputArray, singleCb, finalCb) {
+	let lenTarget = 0;
+	for (let i = 0, len = inputArray.length; i < len; i++) {
+		(function() {
+			let ii = i;
+			process.nextTick(function() {
+				singleCb(inputArray[ii]);
+				lenTarget++;
+				console.log("target ", lenTarget)
+				if (lenTarget === len) {
+					finalCb(inputArray);
+				}
+			});
+		})();
+	}
 }
