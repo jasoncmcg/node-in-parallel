@@ -6,7 +6,7 @@ module.exports = function(inputArray, singleCb, finalCb) {
 			process.nextTick(function() {
 				singleCb(inputArray[ii]);
 				lenTarget++;
-				console.log("target ", lenTarget)
+				//console.log("target ", lenTarget)
 				if (lenTarget === len) {
 					finalCb(inputArray);
 				}
